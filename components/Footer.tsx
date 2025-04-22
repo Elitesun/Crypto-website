@@ -5,6 +5,11 @@ import { Twitter, Instagram, Linkedin, Github, Send } from "lucide-react";
 
 const Footer = () => {
   return (
+    <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
     <footer className="bg-black border-t border-gray-800">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
@@ -127,6 +132,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </motion.div>
   );
 };
 

@@ -49,7 +49,7 @@ const people = [
 export function AnimatedTooltipPreview() {
   return (
     <div className="flex flex-row items-center">
-      <AnimatedTooltip items={people} />
+      <AnimatedTooltip items={people.slice(0, 4)} />
     </div>
   );
 }

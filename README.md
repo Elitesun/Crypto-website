@@ -1,6 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Invest - Modern Cryptocurrency Investment Platform
 
-## Getting Started
+![Investment Platform Preview](/public/img.png)
+
+## 🚀 Overview
+
+Invest is a modern, user-friendly cryptocurrency investment platform built with Next.js 15 and React 19. It offers a seamless experience for users to manage their crypto investments with advanced features and real-time tracking capabilities.
+
+## ✨ Key Features
+
+- 🎯 Real-time cryptocurrency tracking
+- 💼 Multiple investment plan options
+- 📱 Responsive mobile-first design
+- 🔒 Enhanced security features
+- 💫 Smooth animations and transitions
+- 🌙 Dark mode support
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15
+- **UI Library:** React 19
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Font:** Geist Sans & Mono
+
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+```bash
+git clone <your-repo-url>
+```
 
 First, run the development server:
 
@@ -34,3 +63,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+invest/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── Features.tsx
+│   ├── Hero.tsx
+│   ├── Pricing.tsx
+│   ├── Stats.tsx
+│   └── ui/
+├── lib/
+│   └── utils.ts
+└── public/
+    └── images/

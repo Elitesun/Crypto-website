@@ -4,7 +4,7 @@ import { BatteryCharging, Wifi } from "lucide-react";
 
 export function DemoFloatingPhone() {
   return (
-    <section className="grid place-content-center p-12">
+    <section className="grid place-content-center mt-2">
       <FloatingPhone />
     </section>
   );

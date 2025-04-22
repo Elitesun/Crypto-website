@@ -1,11 +1,13 @@
 import { ArrowUpRight} from 'lucide-react';
 import { AnimatedTooltipPreview } from './animations/User';
 import { DemoFloatingPhone } from './animations/FloatingPhone';
+import Image from 'next/image';
+
 const Hero = () => {
 return (
 <>
     {/* Hero Section */}
-    <section id="hero" className="container mx-auto px-4 sm:px-6 py-10 sm:py-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id="hero" className="mt-10 container mx-auto px-4 sm:px-6 py-10 sm:py-20 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6 sm:space-y-8">
             <div className="flex items-center space-x-2">
                 <span className="text-sm sm:text-base">KEEP YOUR MONEY SAFE !</span>
@@ -17,11 +19,6 @@ return (
                 <br />
                 <span className="text-gray-500">for your future.</span>
             </h2>
-
-            <div className="flex items-center space-x-4 sm:space-x-8">
-                    <AnimatedTooltipPreview />
-                <span className="text-base sm:text-lg md:text-xl">168K+ <br />Realtime Users</span>
-            </div>
 
             <div className="flex items-center space-x-2 bg-[#111111] p-3 sm:p-4 rounded-lg w-fit">
                 <div className="bg-[#CCFF00] p-2 rounded-full">
@@ -36,6 +33,22 @@ return (
 
         <div className="relative mt-8 md:mt-0">
           <DemoFloatingPhone />
+          <div className="absolute -left-5 top-1/2 -translate-y-1/2 flex items-center flex-col gap-2">
+            <Image 
+              src="/apple.svg" 
+              alt="Download on the App Store" 
+              className=" object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
+              width={130} 
+              height={130}
+            />
+            <Image 
+              src="/google.svg" 
+              alt="Get it on Google Play" 
+              className=" object-contain hover:scale-105 transition-transform duration-300 cursor-pointer" 
+              width={160} 
+              height={160}
+            />
+          </div>
         </div>
     </section>
 </>

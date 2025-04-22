@@ -1,6 +1,8 @@
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
+import Pricing from "@/components/Pricing";
 import Stats from "@/components/Stats";
 
 const page = () => {
@@ -9,7 +11,10 @@ const page = () => {
       <Nav />
       <Hero />
       <Features />
+      <Pricing />
       <Stats />
+      <Footer />
+      
     </div>
   );
 }
